@@ -6,16 +6,22 @@
 sum = 0
 fib1 = 1  #initialize loop variables
 fib2 = 1
+print (fib1)
+print (fib2)
 
 while fib1 < 4000000 or fib2 < 4000000:
-    fib1 = fib1 + fib2
-    fib2 = fib1 + fib2
+    if fib1 > 4000000 or fib2 > 4000000:
+        break
+    else:
+        fib1 = fib1 + fib2
+        fib2 = fib1 + fib2
+        print (str(fib1) + 'fib1')
+        print (fib2)
+        if fib1%2 == 0:   #Checking if fibonacci series' number is even
+            sum += fib1
 
-    if fib1%2 == 0:   #Checking if fibonacci series' number is even
-        sum += fib1
-
-    if fib2%2 == 0:
-        sum += fib2
+        if fib2%2 == 0:
+            sum += fib2
 
 print (sum)
 

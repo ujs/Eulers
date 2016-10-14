@@ -6,8 +6,8 @@
 import time
 start_time = time.time()
 
-list = []
-for i in range(100,1000):
+list = []  #initiating empty list chich will collect palindromes
+for i in range(100,1000):       #
     for j in range(100,1000):
         c = i*j
         e = str(c)
