@@ -3,26 +3,18 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 
-sum = 0
-fib1 = 1  #initialize loop variables
-fib2 = 1
-print (fib1)
-print (fib2)
+def fib_seq_even(n):
+    '''Returns the sum of even numbers in a Fibonacci sequence whose values do not exceed n'''
+    sum = 0
+    a, b = 0, 1 #initializing loop variables
+                 
+    while a < n:       
+        a, b = b, a + b 
+        if b%2 == 0:   #Checking if fibonacci number is even
+            sum += b
+        
+                
+    return sum
 
-while fib1 < 4000000 or fib2 < 4000000:
-    if fib1 > 4000000 or fib2 > 4000000:
-        break
-    else:
-        fib1 = fib1 + fib2
-        fib2 = fib1 + fib2
-        print (str(fib1) + 'fib1')
-        print (fib2)
-        if fib1%2 == 0:   #Checking if fibonacci series' number is even
-            sum += fib1
-
-        if fib2%2 == 0:
-            sum += fib2
-
-print (sum)
 
 

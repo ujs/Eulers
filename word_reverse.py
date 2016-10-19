@@ -1,4 +1,4 @@
-def is_palindrom():
+def is_palindrome():
     '''Checks if the word entered as input is a palindrome or not'''
     j = -1
     x = input('enter a word: ')
