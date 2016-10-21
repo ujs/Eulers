@@ -14,7 +14,7 @@ def pascal(n):
     return triangle
         
             
-print(pascal(5))     
+print(pascal(2))     
 
 
     
