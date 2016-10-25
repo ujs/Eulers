@@ -18,14 +18,10 @@ def is_palindrome(c):
 
 list = []  #initiating empty list chich will collect palindromes
 for i in range(100,1000):       #
-    for j in range(100,1000):
+    for j in range(i,1000):
         c = i*j
         e = str(c)
-##        d = ''
-##        for k in range(len(str(c))-1,-1,-1):    #Finding if the string is palindrome without recurion
-##            d = d + e[k]
-##        
-##        if d == e:
+
         if is_palindrome(e):
             list += [c]
 
