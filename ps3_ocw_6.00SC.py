@@ -12,7 +12,7 @@ def countSubStringMatch(target,key):
     return counter
 
 
-#With Recursion
+#With Recursion- Question 1 MIT OCW PS 3
 
 def countSubStringMatchRecursion(target,key):
     '''Uses recursion & returns the number of times the key string occurs in the target string'''
@@ -29,6 +29,7 @@ def test_countSubStringMatchRecursion():
 
 
 # Question 2 MIT OCW PS 3
+#Without Recursion
 def subStringMatchExact(target,key):
 
     tuple = ()
@@ -39,4 +40,14 @@ def subStringMatchExact(target,key):
     return tuple
 
     
-    
+# Question 2 MIT OCW PS 3
+#With Recursion
+
+def subStringMatchExact_recursion(target,key):
+    index = str.find(target,key)
+    if index == -1: return ()
+    else: return (index,) + (subStringMatchExact_recursion(target[index+1:],key))
+
+def test_subStringMatchExact_recursion():
+    print(subStringMatchExact_recursion("atgacatgcacaagtatgcat","atgc"))
+        
