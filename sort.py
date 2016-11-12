@@ -1,4 +1,4 @@
-L = [5,3,6,2,32]
+
 
     
 def selection_sort(L):
@@ -46,8 +46,8 @@ def bubble_sort(L):
     return L
 
 ### The following two functions handle merge sort together.
-left = [3,5,6,7]
-right = [1,4,7,8,10,12]
+
+L = [5,3,6,2,32,16,8,12]
 
 def merge(left,right):
     i = 0
@@ -74,7 +74,7 @@ def sort(L):
         mid = int(len(L)/2)
         left_side = sort(L[:mid])
         right_side = sort(L[mid:])
-        final_ans = merge(left_side, right_side)
+        final_ans = merge(left_side,right_side)
         return final_ans
             
 
