@@ -1,6 +1,5 @@
 def f(s):
     '''double recursion'''
-    print ('@@@@@'+ s)
     if len(s) <= 1:
         return s
     else:
@@ -8,5 +7,6 @@ def f(s):
         
 
 print (f('mat'))
+
 
 
