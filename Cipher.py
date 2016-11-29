@@ -116,16 +116,24 @@ def build_coder(shift):
     'v': 'y', 'y': 'a', 'x': ' ', 'z': 'b'}
     (The order of the key-value pairs may be different.)
     """
-    assert shift >= 0 and shift < 27
+    assert shift >= -27 and shift < 27
     assert isinstance(shift,int)
 
     ans = {}
     l_case = string.ascii_lowercase + ' '
     u_case = string.ascii_uppercase + ' '
-
-    shift_l_case = l_case[shift:] + l_case[:shift]
-    shift_u_case = u_case[shift:] + u_case[:shift]
-
+    if shift >=0:
+        shift_l_case = l_case[shift:] + l_case[:shift]
+        shift_u_case = u_case[shift:] + u_case[:shift]
+    else:
+        shift_l_case = ''
+        shift_u_case = ''
+        for j in range(shift, len(l_case)+shift,1):
+            shift_l_case += l_case[j]
+        for j in range(shift, len(u_case)+shift,1):
+            shift_u_case += u_case[j]
+        print (shift_l_case)
+        
     # Construct Caesar cipher dictionary
     # Add uppercase letters first so ' ' will be overwritten to point to lowercase letter
     for i in range(len(l_case)):
