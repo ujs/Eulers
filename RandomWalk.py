@@ -1,4 +1,4 @@
-import math, random, pylab
+import math, random
 
 class Location(object):
     def __init__(self, x, y):
