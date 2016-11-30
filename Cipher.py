@@ -128,9 +128,9 @@ def build_coder(shift):
     else:
         shift_l_case = ''
         shift_u_case = ''
-        for j in range(shift, len(l_case)+shift,1):
+        for j in range(shift, len(l_case) + shift,1):
             shift_l_case += l_case[j]
-        for j in range(shift, len(u_case)+shift,1):
+        for j in range(shift, len(u_case) + shift,1):
             shift_u_case += u_case[j]
         print (shift_l_case)
         
@@ -219,7 +219,15 @@ def apply_coder(text, coder):
     >>> apply_coder("Khoor,czruog!", build_decoder(3))
     'Hello, world!'
     """
-    ### TODO.
+    encoded_text = ''
+    #For each letter added encoded value
+    for letter in text:
+        if letter in coder:
+            encoded_text += coder[letter]
+        #Not a letter or space. e.g. ',' so use the character as is.
+        else:
+            encoded_text += letter
+    return encoded_text
   
 
 def apply_shift(text, shift):
@@ -239,7 +247,7 @@ def apply_shift(text, shift):
     >>> apply_shift('This is a test.', 8)
     'Apq hq hiham a.'
     """
-    ### TODO.
+    
    
 #
 # Problem 2: Codebreaking.
