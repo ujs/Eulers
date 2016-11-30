@@ -247,7 +247,8 @@ def apply_shift(text, shift):
     >>> apply_shift('This is a test.', 8)
     'Apq hq hiham a.'
     """
-    
+    assert shift >= 0 and shift < 27, 'shift %s is not between 0 and 27' % shift
+    return apply_coder(text, build_coder(shift))
    
 #
 # Problem 2: Codebreaking.
