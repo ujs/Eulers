@@ -55,6 +55,8 @@ def main():
     print(puppy.speak())
     print(puppy.getName())
     print(puppy.birthDate())
+    print(str(puppy.name))
+    print(repr(puppy.name))
     
 if __name__ == "__main__":
     main()
