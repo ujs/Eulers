@@ -14,7 +14,7 @@ def load_words():
     take a while to finish.
     """
     print ("Loading word list from file...")
-    # inFile: file
+    # inFile: FILE
     inFile = open(WORDLIST_FILENAME, 'r')
     # line: string
     line = inFile.readline()
@@ -86,6 +86,7 @@ def get_fable_string():
     f = open("fable.txt", "r")
     fable = str(f.read())
     f.close()
+    
     return fable
 
 
