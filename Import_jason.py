@@ -1,6 +1,6 @@
-
 import json
-path = open('sample.txt', "r", encoding='utf-8')
+#path = open('sample.txt', "r", encoding='utf-8')
+path = open('sample.txt')
 records = [json.loads(line) for line in path]
 
 time_zones = [rec['tz'] for rec in records if 'tz' in rec]
@@ -25,8 +25,19 @@ time_zones = [rec['tz'] for rec in records if 'tz' in rec]
 ##    value_key_pair.sort()
 ##    return value_key_pair[-n:]
 
-from collections import Counter
+##from collections import Counter
+##
+##counter = Counter(time_zones)
+##counts.most_common(10)
 
-counter = Counter(time_zones)
-counts.most_common(10)
+from pandas import DataFrame, Series
+import pandas as pd
+frame = DataFrame(records)
 
+tz_counts = frame['tz'].value_counts()
+
+clean_tz = frame['tz'].fillna('Missing')
+
+clean_tz[clean_tz == ''] = 'Unknown'
+
+tz_counts = clean_tz.value_counts()
