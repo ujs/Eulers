@@ -38,6 +38,12 @@ values = np.random.randint(1,10,size=5)
 
 #Trig Functions
 theta = np.linspace(0, np.pi, 3)
-print(theta)
-print(theta)
+
+x = np.array([0.001])
+# print("exp(x)= ",np.exp(x), "exp(x)-1= ",np.expm1(x))
+
+#Scipy
+from scipy import special
+
+
 
