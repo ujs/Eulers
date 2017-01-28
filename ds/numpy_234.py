@@ -31,3 +31,7 @@ def calculate_reci(values):
 		output[i] = 1.0/values[i]
 	return output
 values = np.random.randint(1,10,size=5)
+
+#Vectorized Operations
+print (np.arange(5)/np.arange(1,6))
+
