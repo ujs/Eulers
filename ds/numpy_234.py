@@ -48,5 +48,8 @@ x = np.array([0.001])
 #Scipy
 from scipy import special
 
+a = np.random.randint(20)
+print (special.gamma(a))
+
 
 
