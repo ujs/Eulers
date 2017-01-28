@@ -33,5 +33,11 @@ def calculate_reci(values):
 values = np.random.randint(1,10,size=5)
 
 #Vectorized Operations
-print (np.arange(5)/np.arange(1,6))
+#print (np.arange(5)/np.arange(1,6))
+
+
+#Trig Functions
+theta = np.linspace(0, np.pi, 3)
+print(theta)
+print(theta)
 
