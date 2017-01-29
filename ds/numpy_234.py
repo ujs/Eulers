@@ -52,9 +52,12 @@ a = np.random.randint(20)
 print (special.gamma(a))
 
 L = np.random.random(100)
-print (sum(L))
-print (np.sum(L))
-print (L.sum())
+# print (sum(L))
+# print (np.sum(L))
+# print (L.sum())
+
+print (min(L),max(L))
+print (np.min(L))
 
 
 
