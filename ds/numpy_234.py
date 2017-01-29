@@ -51,5 +51,12 @@ from scipy import special
 a = np.random.randint(20)
 print (special.gamma(a))
 
+L = np.random.random(100)
+print (sum(L))
+print (np.sum(L))
+print (L.sum())
+
+
+
 
 
