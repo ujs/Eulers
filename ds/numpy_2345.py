@@ -77,5 +77,10 @@ print (np.percentile(heights,75))
 import matplotlib.pyplot as pyplot
 import seaborn; seaborn.set()
 
+plt.hist(heights)
+plt.title('Hieght Distribution- US Presidents')
+plt.xlabel('height (cm)')
+plt.ylabel('number')
+
 
 
