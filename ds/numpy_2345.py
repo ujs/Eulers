@@ -73,6 +73,7 @@ heights = np.array(data['height(cm)'])
 # print (heights.mean())
 # print (heights.std())
 # print (np.percentile(heights,25))
+print (np.percentile(heights,75))
 
 
 
