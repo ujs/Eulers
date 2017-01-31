@@ -65,6 +65,11 @@ np.sum(M)
 print(M.min(axis = 0))
 print(M.max(axis=1))
 
+#President's age
+import pandas as pd
+data = pd.read_csv('president_heights.csv')
+heights = np.array(data['height(cm)'])
+print (heights)
 
 
 
