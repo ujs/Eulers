@@ -69,7 +69,11 @@ print(M.max(axis=1))
 import pandas as pd
 data = pd.read_csv('president_heights.csv')
 heights = np.array(data['height(cm)'])
-print (heights)
+# print (heights)
+# print (heights.mean())
+# print (heights.std())
+# print (np.percentile(heights,25))
+
 
 
 
