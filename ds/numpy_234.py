@@ -56,8 +56,8 @@ L = np.random.random(100)
 # print (np.sum(L))
 # print (L.sum())
 
-print (min(L),max(L))
-print (np.min(L))
+# print (min(L),max(L))
+# print (np.min(L))
 
 
 
