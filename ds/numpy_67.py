@@ -39,4 +39,7 @@ a = np.array([2,4,3,7,4,8])
 # b = np.ones((2,6))
 # print(b)
 
+#RandomState
+rng = np.random.RandomState(0)
+a = rng.randint(10, size = (3,4))
 
