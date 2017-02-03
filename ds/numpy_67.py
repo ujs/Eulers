@@ -23,11 +23,11 @@ plt.ion
 import pandas as pd
 
 #precipitation data analysis
-# rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
-# inches = rainfall / 254  # 1/10mm -> inches
-# inches.shape
-# plt.hist(inches,40);
-# plt.show()
+rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
+inches = rainfall / 254  # 1/10mm -> inches
+inches.shape
+plt.hist(inches,40);
+plt.show()
 
 #Boolean
 a = np.array([2,4,3,7,4,8])
@@ -42,7 +42,10 @@ a = np.array([2,4,3,7,4,8])
 #RandomState
 rng = np.random.RandomState(0)
 a = rng.randint(10, size = (3,4))
-print(np.count_nonzero(a<10))
-print(np.sum(a>4))
-print(np.sum(a<6,axis=1))
+# print(np.count_nonzero(a<10))
+# print(np.sum(a>4))
+# print(np.sum(a<6,axis=1))
+
+
+
 
