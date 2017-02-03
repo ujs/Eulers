@@ -4,3 +4,4 @@ b = np.arange(3)
 c = b[:,np.newaxis]
 # print(N)
 # print (c)
+print(np.logaddexp(N,c))
