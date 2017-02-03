@@ -15,14 +15,25 @@ y = np.linspace(0, 5, 50)[:, np.newaxis]
 z = np.sin(x) ** 10 + np.cos(10 + y * x) * np.cos(x)
 # %matplotlib inline
 import matplotlib.pyplot as plt
+import seaborn; seaborn.set()
 plt.ion
-plt.imshow(z, origin='lower', extent=[0, 5, 0, 5], cmap='viridis')
-plt.colorbar()
-plt.show()
-import pandas as pandas
+# plt.imshow(z, origin='lower', extent=[0, 5, 0, 5], cmap='viridis')
+# plt.colorbar()
+# plt.show()
+import pandas as pd
 
 #precipitation data analysis
 rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
 inches = rainfall / 254  # 1/10mm -> inches
 inches.shape
+plt.hist(inches,40);
+plt.show()
+
+#Boolean
+a = np.array([2,4,3,7,4,8])
+print(a<4)
+print(a>4)
+print(a!=4)
+print((2*a)==(a**2))
+
 
