@@ -19,4 +19,10 @@ plt.ion
 plt.imshow(z, origin='lower', extent=[0, 5, 0, 5], cmap='viridis')
 plt.colorbar()
 plt.show()
+import pandas as pandas
+
+#precipitation data analysis
+rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
+inches = rainfall / 254  # 1/10mm -> inches
+inches.shape
 
