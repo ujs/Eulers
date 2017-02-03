@@ -26,8 +26,14 @@ import pandas as pd
 rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
 inches = rainfall / 254  # 1/10mm -> inches
 inches.shape
-plt.hist(inches,40);
-plt.show()
+# plt.hist(inches,40);
+# plt.show()
+# print(np.sum((inches>0.5) & (inches<1)))
+print("Number days without rain:      ", np.sum(inches == 0))
+print("Number days with rain:         ", np.sum(inches != 0))
+print("Days with more than 0.5 inches:", np.sum(inches > 0.5))
+print("Rainy days with < 0.2 inches  :", np.sum((inches > 0) &
+                                                (inches < 0.2)))
 
 #Boolean
 a = np.array([2,4,3,7,4,8])
