@@ -42,4 +42,7 @@ a = np.array([2,4,3,7,4,8])
 #RandomState
 rng = np.random.RandomState(0)
 a = rng.randint(10, size = (3,4))
+print(np.count_nonzero(a<10))
+print(np.sum(a>4))
+print(np.sum(a<6,axis=1))
 
