@@ -23,17 +23,20 @@ plt.ion
 import pandas as pd
 
 #precipitation data analysis
-rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
-inches = rainfall / 254  # 1/10mm -> inches
-inches.shape
-plt.hist(inches,40);
-plt.show()
+# rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
+# inches = rainfall / 254  # 1/10mm -> inches
+# inches.shape
+# plt.hist(inches,40);
+# plt.show()
 
 #Boolean
 a = np.array([2,4,3,7,4,8])
-print(a<4)
-print(a>4)
-print(a!=4)
-print((2*a)==(a**2))
+# print(a<4)
+# print(a>4)
+# print(a!=4)
+# print((2*a)==(a**2))
+
+# b = np.ones((2,6))
+# print(b)
 
 
