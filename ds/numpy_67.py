@@ -26,6 +26,12 @@ import pandas as pd
 rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
 inches = rainfall / 254  # 1/10mm -> inches
 inches.shape
+rainy = (inches>0)
+days = np.arange(365)
+summer = (days >170) & (days < 260)
+print (np.median (inches[rainy]))
+
+
 # plt.hist(inches,40);
 # plt.show()
 # print(np.sum((inches>0.5) & (inches<1)))
