@@ -56,8 +56,11 @@ b = rng.randint(10, size = (3,4))
 # print(np.count_nonzero(a<10))
 # print(np.sum(a>4))
 # print(np.sum(a<6,axis=1))
-print(b<5)
-print (b[b>8])
+# print(b<5)
+# print (b[b>8])
+A = np.array([1, 0, 1, 0, 1, 0], dtype=bool)
+B = np.array([1, 1, 1, 0, 1, 1], dtype=bool)
+A | B
 
 
 
