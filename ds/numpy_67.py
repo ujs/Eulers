@@ -29,11 +29,10 @@ inches.shape
 # plt.hist(inches,40);
 # plt.show()
 # print(np.sum((inches>0.5) & (inches<1)))
-print("Number days without rain:      ", np.sum(inches == 0))
-print("Number days with rain:         ", np.sum(inches != 0))
-print("Days with more than 0.5 inches:", np.sum(inches > 0.5))
-print("Rainy days with < 0.2 inches  :", np.sum((inches > 0) &
-                                                (inches < 0.2)))
+# print("Number days without rain:      ", np.sum(inches == 0))
+# print("Number days with rain:         ", np.sum(inches != 0))
+# print("Days with more than 0.5 inches:", np.sum(inches > 0.5))
+      
 
 #Boolean
 a = np.array([2,4,3,7,4,8])
@@ -51,6 +50,8 @@ a = rng.randint(10, size = (3,4))
 # print(np.count_nonzero(a<10))
 # print(np.sum(a>4))
 # print(np.sum(a<6,axis=1))
+print(a<5)
+print (a[a>8])
 
 
 
