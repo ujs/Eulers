@@ -70,6 +70,8 @@ x = rand.randint(100, size=10)
 ind = [3, 7, 4]
 x[ind]
 
+ind = np.array([[3, 7],[4, 5]])
+x[ind]
 
 
 
