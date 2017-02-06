@@ -73,6 +73,12 @@ x[ind]
 ind = np.array([[3, 7],[4, 5]])
 x[ind]
 
+row = np.array([0, 1, 2])
+col = np.array([2, 1, 3])
+X[row, col]
+
+
+
 
 
 
