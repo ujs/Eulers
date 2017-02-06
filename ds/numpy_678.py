@@ -67,6 +67,10 @@ import numpy as np
 rand = np.random.RandomState(42)
 
 x = rand.randint(100, size=10)
+ind = [3, 7, 4]
+x[ind]
+
+
 
 
 
