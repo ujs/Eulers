@@ -69,11 +69,13 @@ rand = np.random.RandomState(42)
 x = rand.randint(100, size=10)
 ind = [3, 7, 4]
 x[ind]
-
-ind = np.array([[3, 7],[4, 5]])
 x[ind]
 
-
+mean = [0, 0]
+cov = [[1, 2],
+       [2, 5]]
+X = rand.multivariate_normal(mean, cov, 100)
+X.shape
 
 
 
