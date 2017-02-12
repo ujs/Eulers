@@ -68,7 +68,9 @@ rand = np.random.RandomState(42)
 X = np.arange(12).reshape((3,4))
 row = np.array([0,1,2])
 column = np.array([2,1,3])
-
+mean = [0,0]
+cov = [[1,2],[2,5]]
+y = rand.multivariate_normal(mean, cov, 100)
 
 
 
