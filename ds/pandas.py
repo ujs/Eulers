@@ -6,3 +6,8 @@ i = np.searchsorted(bins, x)
 np.add.at(counts, i, 1)
 plt.plot(bins, counts, linestyle='steps')
 x = np.random.randn(1000000)
+def selection_sort(x):
+    for i in range(len(x)):
+        swap = i + np.argmin(x[i:])
+        (x[i], x[swap]) = (x[swap], x[i])
+    return x
