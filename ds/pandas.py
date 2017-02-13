@@ -11,3 +11,6 @@ def selection_sort(x):
         swap = i + np.argmin(x[i:])
         (x[i], x[swap]) = (x[swap], x[i])
     return x
+
+ x = np.array([2, 1, 4, 3, 5])
+selection_sort(x)
