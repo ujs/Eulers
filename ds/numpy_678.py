@@ -68,8 +68,11 @@ rand = np.random.RandomState(42)
 mean = [0,0]
 cov = [[1,2],[2,5]]
 X = rand.multivariate_normal(mean,cov, 100)
-plt.scatter(X[:, 0], X[:, 1])
-plt.show()
+# plt.scatter(X[:, 0], X[:, 1])
+# plt.show()
 
+#Indices
 
+indices = np.random.choice(X.shape[0],20,replace = False)
+X[indices]
 
