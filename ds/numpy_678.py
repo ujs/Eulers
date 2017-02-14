@@ -87,9 +87,11 @@ bins = np.linspace(-5,5,20)
 counts = np.zeros_like(bins)
 
 #bin for each value of a
-i = np.searchsorted(bins, x)
+i = np.searchsorted(bins, a)
 
 #plus one to each bin
 np.add.at(counts, i, 1)
 
-plt.plot(bins, counts, linestyle = 'steps')
+# plt.plot(bins, counts, linestyle = 'steps')
+
+plt.hist(a, bins, histtype='step')
