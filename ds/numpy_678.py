@@ -75,4 +75,6 @@ X = rand.multivariate_normal(mean,cov, 100)
 
 indices = np.random.choice(X.shape[0],20,replace = False)
 select = X[indices]
+plt.scatter(X[:, 0], X[:, 1], alpha=0.3)
+plt.scatter(select[:, 0], select[:, 1],facecolor='none', s=200);
 
