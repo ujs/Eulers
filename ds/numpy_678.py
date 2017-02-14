@@ -128,3 +128,12 @@ a = rand.randint(0,10,(4,6))
 A = rand.rand(10,2)
 plt.scatter(A[:, 0], A[:, 1], s=100)
 dist_sq = np.sum((A[:, np.newaxis, :] - A[np.newaxis, :, :]) ** 2, axis=-1)
+
+
+
+
+
+
+
+# Structured Array
+data = np.zeros(4, dtype={'names':('name', 'age', 'weight'),'formats':('U10', 'i4', 'f8')})
