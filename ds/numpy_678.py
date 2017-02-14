@@ -119,3 +119,5 @@ a = rand.randint(0,10,(4,6))
 # print (np.sort(a, axis = 0))
 # print (np.sort(a, axis = 1))
 
+print(np.argpartition(a, 3))
+print (np.argpartition(a,2,axis =0))
