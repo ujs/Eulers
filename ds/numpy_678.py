@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn; seaborn.set()
 N = np.ones((3,2))
 b = np.arange(3)
 c = b[:,np.newaxis]
@@ -14,8 +16,7 @@ y = np.linspace(0, 5, 50)[:, np.newaxis]
 
 z = np.sin(x) ** 10 + np.cos(10 + y * x) * np.cos(x)
 # %matplotlib inline
-import matplotlib.pyplot as plt
-import seaborn; seaborn.set()
+
 plt.ion
 # plt.imshow(z, origin='lower', extent=[0, 5, 0, 5], cmap='viridis')
 # plt.colorbar()
@@ -119,5 +120,9 @@ a = rand.randint(0,10,(4,6))
 # print (np.sort(a, axis = 0))
 # print (np.sort(a, axis = 1))
 
-print(np.argpartition(a, 3))
-print (np.argpartition(a,2,axis =0))
+# print(np.argpartition(a, 3))
+# print (np.argpartition(a,2,axis =0))
+
+#K means
+A = rand.rand(10,2)
+plt.scatter(X[:, 0], X[:, 1], s=100)
