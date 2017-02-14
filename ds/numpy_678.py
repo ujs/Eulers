@@ -108,3 +108,8 @@ def bogosort(x):
 	while np.any(x[:-1] > x[1:]):
         np.random.shuffle(x)
     return x
+
+ #np_sort and argsort
+x = np.array([2, 1, 4, 3, 5])
+print (np.sort(x))
+print (np.argsort(x))
