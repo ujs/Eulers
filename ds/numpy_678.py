@@ -74,5 +74,5 @@ X = rand.multivariate_normal(mean,cov, 100)
 #Indices
 
 indices = np.random.choice(X.shape[0],20,replace = False)
-X[indices]
+select = X[indices]
 
