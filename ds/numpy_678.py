@@ -101,3 +101,10 @@ def sel_sort(x):
 		swap = i + np.argmin(x[i:])
 		(x[i],x[swap]) = (x[swap],x[i])
 	return x
+
+#bogosort
+
+def bogosort(x):
+	while np.any(x[:-1] > x[1:]):
+        np.random.shuffle(x)
+    return x
