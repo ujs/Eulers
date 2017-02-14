@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn; seaborn.set()
+import pandas as pd
 N = np.ones((3,2))
 b = np.arange(3)
 c = b[:,np.newaxis]
@@ -21,7 +22,7 @@ plt.ion
 # plt.imshow(z, origin='lower', extent=[0, 5, 0, 5], cmap='viridis')
 # plt.colorbar()
 # plt.show()
-import pandas as pd
+
 
 #precipitation data analysis
 rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
@@ -125,4 +126,5 @@ a = rand.randint(0,10,(4,6))
 
 #K means
 A = rand.rand(10,2)
-plt.scatter(X[:, 0], X[:, 1], s=100)
+plt.scatter(A[:, 0], A[:, 1], s=100)
+dist_sq = np.sum((A[:, np.newaxis, :] - A[np.newaxis, :, :]) ** 2, axis=-1)
