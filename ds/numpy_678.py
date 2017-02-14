@@ -94,9 +94,10 @@ np.add.at(counts, i, 1)
 
 # plt.plot(bins, counts, linestyle = 'steps')
 
-plt.hist(a, bins, histtype='step')
-print("NumPy routine:")
-%timeit counts, edges = np.histogram(x, bins)
+#Selection Sort
 
-print("Custom routine:")
-%timeit np.add.at(counts, np.searchsorted(bins, x), 1)
+def sel_sort(x):
+	for i in range(len(x)):
+		swap = i + np.argmin(x[i:])
+		(x[i],x[swap]) = (x[swap],x[i])
+	return x
