@@ -64,10 +64,12 @@ B = np.array([1, 1, 1, 0, 1, 1], dtype=bool)
 
 #Fancy indexing
 import numpy as np
+rand = np.random.RandomState(42)
 mean = [0,0]
 cov = [[1,2],[2,5]]
-X = rand.multivriate_normal(mean,cov, 100)
+X = rand.multivariate_normal(mean,cov, 100)
 plt.scatter(X[:, 0], X[:, 1])
+plt.show()
 
 
 
