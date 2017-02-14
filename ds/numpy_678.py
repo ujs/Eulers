@@ -104,12 +104,18 @@ def sel_sort(x):
 
 #bogosort
 
-def bogosort(x):
-	while np.any(x[:-1] > x[1:]):
-        np.random.shuffle(x)
-    return x
+# def bogosort(x):
+# 	while np.any(x[:-1] > x[1:]):
+#         np.random.shuffle(x)
+#     return x
 
  #np_sort and argsort
 x = np.array([2, 1, 4, 3, 5])
-print (np.sort(x))
-print (np.argsort(x))
+# print (np.sort(x))
+# print (np.argsort(x))
+
+#Sort by rows or columns
+a = rand.randint(0,10,(4,6))
+print (np.sort(a, axis = 0))
+print (np.sort(a, axis = 1))
+
