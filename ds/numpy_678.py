@@ -141,6 +141,9 @@ name = ['sam','liza','ram','lata']
 age = [34,19,65,42]
 weight = [60.0,45.0,67.0,50.0]
 data['name'] = name
+data['age'] = age
+data['weight'] = weight
+
 
 
 
