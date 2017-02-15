@@ -137,3 +137,22 @@ dist_sq = np.sum((A[:, np.newaxis, :] - A[np.newaxis, :, :]) ** 2, axis=-1)
 
 # Structured Array
 data = np.zeros(4, dtype={'names':('name', 'age', 'weight'),'formats':('U10', 'i4', 'f8')})
+name = ['sam','liza','ram','lata']
+age = [34,19,65,42]
+weight = [60.0,45.0,67.0,50.0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
