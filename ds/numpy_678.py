@@ -127,9 +127,7 @@ a = rand.randint(0,10,(4,6))
 #K means
 A = rand.rand(10,2)
 plt.scatter(A[:, 0], A[:, 1], s=100)
-dist_sq = np.sum((A[:, np.newaxis, :] - A[np.newaxis, :, :]) ** 2, axis=-1)
-
-
+dist_sq = np.sum((A[:, np.newaxis, :] - A[np.newaxis, :, :] ** 2), axis = -1)
 
 
 
