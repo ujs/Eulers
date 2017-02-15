@@ -140,6 +140,7 @@ data = np.zeros(4, dtype={'names':('name', 'age', 'weight'),'formats':('U10', 'i
 name = ['sam','liza','ram','lata']
 age = [34,19,65,42]
 weight = [60.0,45.0,67.0,50.0]
+data['name'] = name
 
 
 
