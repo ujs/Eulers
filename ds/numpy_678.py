@@ -144,6 +144,10 @@ data['name'] = name
 data['age'] = age
 data['weight'] = weight
 
+tp = np.dtype([('id', 'i8'), ('mat', 'f8', (3, 3))])
+X = np.zeros(1, dtype=tp)
+print(X[0])
+print(X['mat'][0])
 
 
 
