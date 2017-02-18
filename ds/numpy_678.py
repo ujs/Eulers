@@ -39,6 +39,8 @@ rainy = (inches>0)
 days = np.arange(365)
 summer = (days >170) & (days < 260)
 winter = (days<170)
+rng = np.random.RandomState(0)
+x = rng.randint(10, size=(3, 4))
 # print (np.median (inches[rainy]))
 
 
