@@ -24,7 +24,9 @@ plt.ion
 # plt.show()
 
 #Newaxis practice
-In [329]: a = np.ones((3,2))
+a = np.ones((3,2))
+b = a[:,np.newaxis,:]
+# print(a+b)
 
 
 #precipitation data analysis
