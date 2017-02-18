@@ -27,6 +27,8 @@ plt.ion
 a = np.ones((3,2))
 b = a[:,np.newaxis,:]
 # print(a+b)
+a = np.array([7,3,2,1,9])
+b = np.ones((5,1))
 
 
 #precipitation data analysis
