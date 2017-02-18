@@ -23,6 +23,9 @@ plt.ion
 # plt.colorbar()
 # plt.show()
 
+#Newaxis practice
+In [329]: a = np.ones((3,2))
+
 
 #precipitation data analysis
 rainfall = pd.read_csv('precipitation.csv')['PRCP'].values
