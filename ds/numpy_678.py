@@ -38,6 +38,7 @@ inches.shape
 rainy = (inches>0)
 days = np.arange(365)
 summer = (days >170) & (days < 260)
+winter = (days<170)
 # print (np.median (inches[rainy]))
 
 
