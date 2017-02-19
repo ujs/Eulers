@@ -59,8 +59,8 @@ a = np.array([2,4,3,7,4,8])
 # print(a!=4)
 # print((2*a)==(a**2))
 
-b = np.ones((2,6))
-print(b)
+# b = np.ones((2,6))
+# print(b)
 
 #RandomState
 rng = np.random.RandomState(0)
