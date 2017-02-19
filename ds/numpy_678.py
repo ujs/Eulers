@@ -46,10 +46,10 @@ x = rng.randint(10, size=(3, 4))
 
 # plt.hist(inches,40);
 # plt.show()
-print(np.sum((inches>0.5) & (inches<1)))
-print("Number days without rain:      ", np.sum(inches == 0))
-print("Number days with rain:         ", np.sum(inches != 0))
-print("Days with more than 0.5 inches:", np.sum(inches > 0.5))
+# print(np.sum((inches>0.5) & (inches<1)))
+# print("Number days without rain:      ", np.sum(inches == 0))
+# print("Number days with rain:         ", np.sum(inches != 0))
+# print("Days with more than 0.5 inches:", np.sum(inches > 0.5))
       
 
 #Boolean
@@ -59,8 +59,8 @@ a = np.array([2,4,3,7,4,8])
 # print(a!=4)
 # print((2*a)==(a**2))
 
-# b = np.ones((2,6))
-# print(b)
+b = np.ones((2,6))
+print(b)
 
 #RandomState
 rng = np.random.RandomState(0)
