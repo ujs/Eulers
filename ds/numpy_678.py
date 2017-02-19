@@ -44,8 +44,8 @@ x = rng.randint(10, size=(3, 4))
 # print (np.median (inches[rainy]))
 
 
-# plt.hist(inches,40);
-# plt.show()
+plt.hist(inches,40);
+plt.show()
 # print(np.sum((inches>0.5) & (inches<1)))
 # print("Number days without rain:      ", np.sum(inches == 0))
 # print("Number days with rain:         ", np.sum(inches != 0))
