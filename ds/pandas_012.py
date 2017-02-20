@@ -24,3 +24,5 @@ states = pd.DataFrame({'population': population,
 
 #1
 pd.DataFrame (population, columns = ['population'])
+#2
+A = np.zeros(3, dtype=[('A', 'i8'), ('B', 'f8')])
