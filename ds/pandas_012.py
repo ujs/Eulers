@@ -19,3 +19,8 @@ area_dict = {'California': 423967, 'Texas': 695662, 'New York': 141297,
 area = pd.Series(area_dict)
 states = pd.DataFrame({'population': population,
                        'area': area})
+
+#Data Frame Construction
+
+#1
+pd.DataFrame (population, columns = ['population'])
