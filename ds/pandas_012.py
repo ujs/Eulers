@@ -12,3 +12,5 @@ pop_dict = {'Cal': 38332521,
                    'Florida': 19552860,
                    'Illinois': 12882135}
 population = pd.Series(pop_dict)
+
+data_strange = pd.series({2:'a',1:'b',3:'c'}, index = [3,4])
