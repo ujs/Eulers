@@ -38,4 +38,4 @@ data = pd.DataFrame({'area':area, 'pop':pop})
 
 # print(data['pop'])
 # print(data['area'])
-print(data['area']['California'])
+# print(data['area']['California'])
