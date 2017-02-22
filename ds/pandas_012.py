@@ -45,5 +45,5 @@ ser = pd.Series(rng.randint(0, 10, 4))
 
 U = pd.Series([2,5,7], index = [0,1,2]) 
 V = pd.Series([8,9,10], index = [1,2,3])
-print(V+U)
-print(V.add(U,fill_value = 0))
+# print(V+U)
+# print(V.add(U,fill_value = 0))
