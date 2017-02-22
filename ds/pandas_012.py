@@ -39,3 +39,6 @@ data = pd.DataFrame({'area':area, 'pop':pop})
 # print(data['pop'])
 # print(data['area'])
 # print(data['area']['California'])
+
+rng = np.random.RandomState(42)
+ser = pd.Series(rng.randint(0, 10, 4))
