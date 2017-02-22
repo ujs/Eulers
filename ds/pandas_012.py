@@ -36,6 +36,6 @@ pop = pd.Series({'California': 38332521, 'Texas': 26448193,
                  'Illinois': 12882135})
 data = pd.DataFrame({'area':area, 'pop':pop})
 
-# print(data['pop'])
-# print(data['area'])
-# print(data['area']['California'])
+print(data['pop'])
+print(data['area'])
+print(data['area']['California'])
