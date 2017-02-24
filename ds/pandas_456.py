@@ -1,5 +1,4 @@
 import numpy as np
 import pandas as pd
 
-ufo = pd.read_csv('http://bit.ly/uforepo')
-ufo.tail()
+cali = pd.read_csv('https://raw.githubusercontent.com/jakevdp/PythonDataScienceHandbook/master/notebooks/data/california_cities.csv')
