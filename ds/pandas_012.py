@@ -47,3 +47,6 @@ U = pd.Series([2,5,7], index = [0,1,2])
 V = pd.Series([8,9,10], index = [1,2,3])
 # print(V+U)
 # print(V.add(U,fill_value = 0))
+
+A = rng.randint(10,(3,4))
+print(A-A[0])
