@@ -8,3 +8,4 @@ cali
 
 index = [('California', 2000), ('California', 2010), ('Texas', 2000), ('Texas', 2010)]
 popu = [31000000, 32000000, 20000000, 21000000]
+population = pd.Series(popu, index = index)
