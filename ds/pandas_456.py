@@ -16,3 +16,6 @@ pop_df = pd.DataFrame({'total': pop,
                                    4687374, 4318033,
                                    5906301, 6879014]})
 pop_df
+
+
+pop[[i for i in pop.index if i[1] == 2010]]
