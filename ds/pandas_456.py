@@ -26,3 +26,6 @@ pop_df = pd.DataFrame({'total': pop,
                                    4687374, 4318033,
                                    5906301, 6879014]})
 pop_df
+
+f_u18 = pop_df['under18'] / pop_df['total']
+f_u18.unstack()
