@@ -26,11 +26,11 @@ x1_reshape = x1.reshape((2,3))
 np.random.seed(0)
 
 def calculate_reci(values):
-# 	output = np.empty(len(values))
-# 	for i in range (len(values)):
-# 		output[i] = 1.0/values[i]
-# 	return output
-# values = np.random.randint(1,10,size=5)
+	output = np.empty(len(values))
+	for i in range (len(values)):
+		output[i] = 1.0/values[i]
+	return output
+values = np.random.randint(1,10,size=5)
 
 
 #Vectorized Operations
