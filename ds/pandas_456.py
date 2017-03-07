@@ -18,8 +18,8 @@ pop_df = pd.DataFrame({'total': pop,
 pop_df
 
 
-pop[[i for i in pop.index if i[1] == 2010]]
-index = pd.MultiIndex.from_tuples(index)
+# pop[[i for i in pop.index if i[1] == 2010]]
+# index = pd.MultiIndex.from_tuples(index)
 
 pop_df = pd.DataFrame({'total': pop,
                        'under18': [9267089, 9284094,
