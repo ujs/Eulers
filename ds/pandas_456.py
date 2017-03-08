@@ -8,9 +8,9 @@ import pandas as pd
 
 index = [('California', 2000), ('California', 2010), ('Texas', 2000), ('Texas', 2010)]
 popu = [31000000, 32000000, 20000000, 21000000]
-population = pd.Series(popu, index = index)
-index = pd.MultiIndex.from_tuples(index)
-population.reindex(index)
-print(index)
-# print(population['California'])
-print(population[2000])
+# population = pd.Series(popu, index = index)
+# index1 = pd.MultiIndex.from_tuples(index)
+# population = population.reindex(index1)
+# population_df = population.unstack()
+
+pop_2 = pd.DataFrame(popu, index = [['Cal','Texas'],[2000,2010]], columns = ['population'])
