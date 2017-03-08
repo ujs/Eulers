@@ -7,5 +7,5 @@ import pandas as pd
 # cali
 
 index = pd.MultiIndex.from_arrays([['CA','CA','TX','TX'],[2000,2010,2000,2010]])
-data = pd.DataFrame(np.random.rand(4,1), index = index, columns = ['fig'])
+data = pd.DataFrame([1,2,3,4], index = index, columns = ['fig'])
 print(data)
