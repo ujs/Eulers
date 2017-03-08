@@ -10,4 +10,7 @@ index = [('California', 2000), ('California', 2010), ('Texas', 2000), ('Texas', 
 popu = [31000000, 32000000, 20000000, 21000000]
 # population = pd.Series(popu, index = index)
 index = pd.MultiIndex.from_tuples(index)
-
+popu.reindex(index)
+# print(index)
+# print(popu['California'])
+# print(popu[2000])
