@@ -30,6 +30,7 @@ df5 = pd.DataFrame({'group': ['Accounting', 'Accounting',
                               'Engineering', 'Engineering', 'HR', 'HR'],
                     'skills': ['math', 'spreadsheets', 'coding', 'linux',
                                'spreadsheets', 'organization']})
-
+df3 = pd.DataFrame({'name': ['Bob', 'Jake', 'Lisa', 'Sue'],
+                    'salary': [70000, 80000, 120000, 90000]})
 
 
