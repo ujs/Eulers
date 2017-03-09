@@ -39,4 +39,9 @@ population = pd.read_csv("state-population.csv")
 area = pd.read_csv("state-areas.csv")
 abbrev = pd.read_csv("state-abbrevs.csv")
 merged = pd.merge(population,abbrev,how='outer',left_on='state/region', right_on='abbreviation')
+merged = merged.drop('abbreviation',1)
 
+
+merged.loc[merged['state/region'] == 'PR', 'state'] = 'Puerto Rico'
+merged.loc[merged['state/region'] == 'USA', 'state'] = 'United States'
+final = pd.merge(merged,area,on = 'state',how ='right')
