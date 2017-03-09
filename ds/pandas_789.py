@@ -45,3 +45,8 @@ merged = merged.drop('abbreviation',1)
 merged.loc[merged['state/region'] == 'PR', 'state'] = 'Puerto Rico'
 merged.loc[merged['state/region'] == 'USA', 'state'] = 'United States'
 final = pd.merge(merged,area,on = 'state',how ='right')
+
+# Planets Data (Aggregations)
+import seaborn as sns
+planets = sns.load_dataset('planets')
+planets.shape
