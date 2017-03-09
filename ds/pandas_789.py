@@ -20,4 +20,8 @@ def make_df(cols,ind):
 #     def __repr__(self):
 #         return '\n\n'.join(a + '\n' + repr(eval(a)) for a in self.args)
     
-#     
+
+## Concat
+series1 = pd.Series(['x','y','z'], index = [1,2,3])
+series2 = pd.Series(['a','b','c'], index = [4,5,6])
+new_ser = pd.concat([series1,series2])
