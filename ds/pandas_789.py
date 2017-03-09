@@ -49,3 +49,8 @@ final = pd.merge(merged,area,on = 'state',how ='right')
 # Planets Data (Aggregations)
 import seaborn as sns
 planets = sns.load_dataset('planets')
+
+decade = 10 * (planets['year'] // 10)
+decade = decade.astype(str) + 's'
+decade.name = 'decade'
+planets.groupby(['method', decade])['number'].sum().unstack().fillna(0)
