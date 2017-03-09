@@ -49,4 +49,3 @@ final = pd.merge(merged,area,on = 'state',how ='right')
 # Planets Data (Aggregations)
 import seaborn as sns
 planets = sns.load_dataset('planets')
-planets.shape
