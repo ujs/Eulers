@@ -33,4 +33,8 @@ df5 = pd.DataFrame({'group': ['Accounting', 'Accounting',
 df3 = pd.DataFrame({'name': ['Bob', 'Jake', 'Lisa', 'Sue'],
                     'salary': [70000, 80000, 120000, 90000]})
 
+# US States Data Analysis
 
+population = pd.read_csv("state-population.csv")
+area = pd.read_csv("state-areas.csv")
+abbrev = pd.read_csv("state-abbrevs.csv")
