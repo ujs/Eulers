@@ -38,3 +38,5 @@ df3 = pd.DataFrame({'name': ['Bob', 'Jake', 'Lisa', 'Sue'],
 population = pd.read_csv("state-population.csv")
 area = pd.read_csv("state-areas.csv")
 abbrev = pd.read_csv("state-abbrevs.csv")
+merged = pd.merge(population,abbrev,how='outer',left_on='state/region', right_on='abbreviation')
+
