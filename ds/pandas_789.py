@@ -25,3 +25,11 @@ df2 = pd.DataFrame({'employee': ['Lisa', 'Bob', 'Jake', 'Sue'],
 display('df1', 'df2')
 
 
+
+df5 = pd.DataFrame({'group': ['Accounting', 'Accounting',
+                              'Engineering', 'Engineering', 'HR', 'HR'],
+                    'skills': ['math', 'spreadsheets', 'coding', 'linux',
+                               'spreadsheets', 'organization']})
+
+
+
