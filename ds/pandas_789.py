@@ -54,3 +54,5 @@ import seaborn as sns
 # decade = decade.astype(str) + 's'
 # decade.name = 'decade'
 # planets.groupby(['method', decade])['number'].sum().unstack().fillna(0)
+
+titanic = sns.load_dataset('titanic')
