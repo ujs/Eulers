@@ -13,3 +13,7 @@ import seaborn; seaborn.set()
 bike_data = pd.read_csv('FremontBridge.csv', index_col='Date', parse_dates=True)
 bike_data_W = bike_data['Fremont Bridge West Sidewalk']
 bike_data_E = bike_data['Fremont Bridge East Sidewalk']
+
+weekly = data.resample('W').sum()
+# weekly.plot(style=[':', '--', '-'])
+# plt.ylabel('Weekly bicycle count')
