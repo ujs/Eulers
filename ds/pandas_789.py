@@ -56,3 +56,7 @@ import seaborn as sns
 # planets.groupby(['method', decade])['number'].sum().unstack().fillna(0)
 
 titanic = sns.load_dataset('titanic')
+age = pd.cut(titanic['age'], [0, 18, 80])
+titanic.pivot_table('survived', ['sex', age], 'class')
+
+
